@@ -1,0 +1,148 @@
+/* Corpo e Fundo */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #FF6F91, #FF3B6D, #FF1E56);
+    color: white;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Container principal */
+.container {
+    max-width: 1100px;
+    margin: 80px auto;
+    padding: 50px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 20px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Introdução */
+.intro {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+/* Botões */
+.btn {
+    background: linear-gradient(45deg, #FF3B6D, #FF1E56);
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: 0.3s;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+    background: linear-gradient(45deg, #FF1E56, #FF3B6D);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.hidden {
+    display: none;
+}
+
+/* Caixa de mensagem */
+.message-box {
+    font-size: 22px;
+    padding: 20px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    margin-top: 20px;
+    max-width: 90%;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out; /* Adiciona a transição */
+}
+
+.message-box.show {
+    opacity: 1;
+}
+
+/* Cartões e Títulos */
+h2 {
+    font-size: 26px;
+    margin-top: 30px;
+    color: #fff;
+    font-weight: 600;
+}
+
+/* Galeria de fotos */
+.photo-gallery {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 20px 0;
+    justify-content: center;
+}
+
+.photo-container {
+    position: relative;
+    width: 250px;
+    height: 200px;
+}
+
+.photo-gallery img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+.photo-gallery img:hover {
+    transform: scale(1.6);
+}
+
+/* Mensagem sobre as fotos */
+.photo-message {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    border-radius: 10px;
+    display: none; /* Inicialmente escondido */
+}
+
+/* Mostrar a mensagem quando passar o mouse sobre a foto */
+.photo-container:hover .photo-message {
+    display: block;
+}
+
+/* Estilo para a mensagem final */
+#mensagem-final {
+    font-size: 22px;
+    padding: 25px;
+    margin-top: 40px;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 15px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: white;
+    font-weight: 500;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+
+
+/* Música */
+audio {
+    margin-top: 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: #FF1E56;
+    padding: 10px;
+}
